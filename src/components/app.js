@@ -9,9 +9,18 @@ require('normalize.css');
 require('../styles/main.css');
 
 var App = React.createClass({
-  render: function() {
+  getInitialState() {
+    return {
+      font: MONO
+    };
+  },
+
+  render() {
     return (
       <div className="wrapper">
+        {this.state.font.map((line, i) => {
+          return <p key={i}>{line}</p>;
+        })}
       </div>
     );
   }
