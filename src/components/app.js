@@ -12,8 +12,8 @@ var App = React.createClass({
   getInitialState() {
     return {
       font: SANS_SERIF,
-      hue: 50,
-      lightness: 10
+      hue: Math.random() * (360 - 0),
+      lightness: 30
     };
   },
 
@@ -55,8 +55,8 @@ var App = React.createClass({
       <div
         className="wrapper"
         onClick={this.handleFontChange}
-        style={{backgroundColor: `hsl(${this.state.hue}, 50%, ${this.state.lightness}%)`}}>
-        <pre className="eye" style={{color: `hsl(${this.state.hue}, 50%, ${100 - this.state.lightness}%)`}}>
+        style={{backgroundColor: `hsl(${this.state.hue}, 80%, ${this.state.lightness}%)`}}>
+        <pre className="eye" style={{color: `hsl(${this.state.hue}, 80%, ${100 - this.state.lightness}%)`}}>
           {this.state.font.map((line, i) => {
             return <p className="eyeline" key={i}>{line}</p>;
           })}
