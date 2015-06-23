@@ -11,8 +11,8 @@ var webpack = require('webpack');
 module.exports = {
 
   output: {
-    publicPath: '/assets/',
-    path: 'dist/assets/',
+    publicPath: './assets/',
+    path: './assets/',
     filename: 'main.js'
   },
 
