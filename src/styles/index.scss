@@ -1,0 +1,32 @@
+$line-height: 1.125;
+
+html,
+body {
+  font-size: 16px;
+  line-height: $line-height;
+  user-select: none;
+}
+
+.wrapper {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.eye {
+  left: 50%;
+  position: absolute;
+  top: 45%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.eyeline {
+  font-family: 'Fira Mono';
+  font-weight: bold;
+  margin: 0;
+  min-height: #{$line-height}em;
+  padding: 0;
+}
+
