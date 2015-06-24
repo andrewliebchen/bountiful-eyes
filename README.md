@@ -14,4 +14,4 @@ Go ahead and take it. Got a question or just want to chat? [Hit me up on Twitter
 
 ## Who's next?
 
-I don't know.
+Luke Bugbee ([@bugmango](https://twitter.com/bugmango) is next!
